@@ -25,14 +25,19 @@ body {
   justify-content: center;
   align-items: center;*/
 }
-#content {
-  width: 80%;
+.content {
+  width: 85%;
   height: 50px;
   margin: auto;
   /* border: 1px solid blue; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#top > button:hover {
+  background-color: black;
+  cursor: pointer;
+  border-radius: 2px;
 }
 button {
   font-size: 10px;
@@ -41,9 +46,8 @@ button {
   color: #b2b2b2;
 }
 #logo img {
-  width: 99px;
-  height: 17px;
-  margin-right: 25px;
+  width: 120px;
+  height: 40px;
   padding: 0;
 }
 a {
@@ -53,6 +57,26 @@ a {
   text-decoration: none;
   font-size: 13px;
   font-weight: bold;
+}
+.alignment {
+  display: none;
+  /* justify-content: flex-start; */
+  width: 38.5%;
+  margin-top: -5px;
+  height: 30px;
+  margin-left: 262px;
+  padding-bottom: 8px;
+  /* background-color: #3e3e3e; */
+}
+.more {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 14px;
+  color: white;
+  cursor: pointer;
+}
+.bottom-navbar:hover {
+  border-bottom: 1px solid white;
 }
 #test {
   height: 1500px;
