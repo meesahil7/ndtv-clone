@@ -90,14 +90,14 @@ a {
 .logo .text {
   visibility: hidden;
   width: 120px;
-  background-color: black;
+  background-color: #3e3e3e;
   color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 10px 0;
   position: absolute;
   z-index: 1;
-  top: 100%;
+  top: 50px;
   left: 50%;
   margin-left: -60px;
 }
@@ -115,6 +115,7 @@ a {
   margin: auto;
   margin-top: 20px;
   display: flex;
+  padding-left: 25px;
 }
 #lhs {
   width: 340px;
@@ -162,10 +163,13 @@ a {
   padding-left: 12px;
   color: #434343;
 }
+#mid {
+  margin-right: 25px;
+}
 #headline {
   width: 570px;
   height: 351px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   background-color: #ffffff;
 }
 #headline img {
@@ -173,7 +177,7 @@ a {
   height: 280px;
   margin-bottom: -10px;
 }
-#headline h2 {
+#heading {
   font-size: 21px;
   font-weight: 850;
   line-height: 25px;
@@ -210,14 +214,71 @@ a {
   grid-template-rows: repeat(1, 1fr);
   gap: 18px;
 }
-.shortnews2 div {
-  border: 1px solid black;
-}
-.shortnews2 > div:first-child {
+.shortnews2 > .first-div {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 105px);
 }
-.shortnews2 div {
-  border: 1px solid red;
+.sn2 {
+  display: flex;
+  padding: 10px;
+  background-color: #ffffff;
+  font-weight: lighter;
+}
+#modiImg {
+  position: absolute;
+  width: 100%;
+  height: 310px;
+  z-index: -1;
+  margin-top: -20px;
+}
+#modiHeading {
+  color: whitesmoke;
+  text-align: center;
+  padding: 200px 1px 0px 1px;
+}
+.scroll {
+  width: 300px;
+  height: 350px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.scroll > div:first-child {
+  background-color: #f1f1f1;
+  margin-top: -18px;
+  height: 40px;
+}
+.scroll > div > h3 {
+  padding: 10px 0px 0px 15px;
+}
+#amazon {
+  width: 300px;
+  height: 450px;
+  margin-top: 30px;
+}
+.scroll-container {
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+.scroll-page > div > p:first-child {
+  margin-bottom: -18px;
+}
+.scroll-page > div > p:last-child {
+  padding: 5px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.scroll-page img {
+  width: 100px;
+  height: 70px;
 }
